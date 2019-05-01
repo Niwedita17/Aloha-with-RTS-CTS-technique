@@ -22,6 +22,6 @@ It is also known as CSMA (Carrier Sense Multiple Access). It is subdivided into 
 2.Run the IDE application by double-clicking on it. The IDE should open with the default “unetsim-1.4” folder as root.
 
 # How to use?
-1. Clone this repositary ( git clone http://gitlab.example.com/DataCommunuication_MiniProject/RTS_CTS_with_ALOHA.git )
+1. Clone this repositary ( git clone https://github.com/Niwedita17/Aloha-with-RTS-CTS-technique.git )
 2. Open Unetstack on your device
 3. For Unetstack IDE, open handshake-sim.groovy. Click the Run button displayed above the code. A terminal-like window appears. Start executing RTS/CTS protocol there. For example : for sending a value 5 from node 1 to node 2, run the command - send 2, 5. Notice the working of RTS/CTS with Aloha protocol.
