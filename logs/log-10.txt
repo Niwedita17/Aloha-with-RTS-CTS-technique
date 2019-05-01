@@ -1,0 +1,180 @@
+1554873133424|INFO|org.arl.fjage.shell.GroovyBoot@1:main|fjage Build: fjage-1.4/20-03-2016_16:16:39
+1554873134205|INFO|org.arl.fjage.shell.GroovyBoot@1:main|Running cls://org.arl.unet.sim.initrc
+1554873134216|INFO|org.arl.fjage.shell.GroovyScriptEngine@11:call|RUN: org.arl.unet.sim.initrc
+1554873134553|INFO|org.arl.fjage.shell.GroovyBoot@1:main|Running /home/niwedita/Downloads/unetsim-1.3-linux/unetsim-1.3/test/handshake-sim.groovy
+1554873134557|INFO|org.arl.fjage.shell.GroovyScriptEngine@11:call|RUN: /home/niwedita/Downloads/unetsim-1.3-linux/unetsim-1.3/test/handshake-sim.groovy
+1554873136122|INFO|org.arl.unet.sim.SimulationMasterContainer@11:openSocket|Listening on 0.0.0.0/0.0.0.0:1103
+1554873136354|INFO|org.arl.fjage.remote.MessageAdapter@11:<clinit>|Groovy detected, using GroovyClassLoader
+1554873136505|INFO|Script1@11:call|Starting console shell
+1554873136953|INFO|Script1@11:invoke|Created static node 1 (1) @ [0, 0, 0]
+1554873136954|INFO|org.arl.unet.sim.SimulationMasterContainer@11:openSocket|Listening on 0.0.0.0/0.0.0.0:1104
+1554873136993|INFO|Script1@11:invoke|Starting TCP shell on port 5103
+1554873137037|INFO|Script1@11:invoke|Created static node 2 (2) @ [1000, 0, 0]
+1554873137087|INFO|Script1@11:invoke| --- BEGIN SIMULATION #1 ---
+1554873137093|INFO|org.arl.unet.sim.SimulationMasterContainer@11:init|Initializing agents...
+1554873137165|INFO|MySimpleHandshakeMac@22:init|Loading agent hand on 1
+1554873137166|INFO|<1>@24:invoke|Loading simulator : SimulationAgent
+1554873137170|INFO|org.arl.fjage.shell.ShellAgent@20:init|Agent shell init
+1554873137170|INFO|org.arl.unet.nodeinfo.NodeInfo@23:init|Loading agent node v1.3/17-02-2016_02:36:21 on 1
+1554873137170|INFO|org.arl.unet.sim.HalfDuplexModem@21:init|Loading agent phy v1.3/17-02-2016_02:36:21 on 1
+1554873137255|INFO|org.arl.unet.sim.SimulationMasterContainer@11:init|Agents ready...
+1554873137256|INFO|org.arl.unet.sim.SimulationMasterContainer@11:init|Initializing agents...
+1554873137267|INFO|org.arl.fjage.shell.ShellAgent@25:init|Agent shell init
+1554873137287|INFO|org.arl.unet.sim.HalfDuplexModem@26:init|Loading agent phy v1.3/17-02-2016_02:36:21 on 2
+1554873137289|INFO|org.arl.unet.nodeinfo.NodeInfo@28:init|Loading agent node v1.3/17-02-2016_02:36:21 on 2
+1554873137287|INFO|MySimpleHandshakeMac@27:init|Loading agent hand on 2
+1554873137290|INFO|<2>@29:invoke|Loading simulator : SimulationAgent
+1554873137371|INFO|org.arl.unet.sim.SimulationMasterContainer@11:init|Agents ready...
+1554873137371|INFO|org.arl.unet.sim.SimulationMasterContainer@11:start|Starting container...
+1554873137371|INFO|org.arl.unet.sim.SimulationMasterContainer@11:start|Starting container...
+1554873137372|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|RUN: org.arl.fjage.shell.fshrc
+1554873137375|INFO|org.arl.unet.nodeinfo.NodeInfo@23:startup|Node name is 1, address is 1
+1554873137375|INFO|org.arl.unet.nodeinfo.NodeInfo@28:startup|Node name is 2, address is 2
+1554873137420|INFO|org.arl.fjage.shell.GroovyScriptEngine@31:call|RUN: org.arl.fjage.shell.fshrc
+1554873137430|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|RUN: res://org/arl/unet/shell/fshrc.groovy
+1554873137430|INFO|org.arl.fjage.shell.GroovyScriptEngine@31:call|RUN: res://org/arl/unet/shell/fshrc.groovy
+1554873138051|INFO|Script1@31:call|cls://org.arl.unet.shell/fshrc_jlink not found, skipping it!
+1554873138063|INFO|Script1@30:call|cls://org.arl.unet.shell/fshrc_jlink not found, skipping it!
+1554873138089|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|RUN: /home/niwedita/Downloads/unetsim-1.3-linux/unetsim-1.3/etc/fshrc.groovy
+1554873138093|INFO|org.arl.fjage.shell.GroovyScriptEngine@31:call|RUN: /home/niwedita/Downloads/unetsim-1.3-linux/unetsim-1.3/etc/fshrc.groovy
+1554873138253|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|RUN: /home/niwedita/Downloads/unetsim-1.3-linux/unetsim-1.3/test/fshrc2.groovy
+1554873138315|INFO|org.arl.fjage.shell.TcpShell@18:run|Listening on port 5103
+1554873140235|INFO|org.arl.fjage.shell.ConsoleShell@15:run|> send 2, 8
+1554873140246|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|EVAL: send 2, 8
+1554873140366|INFO|org.arl.fjage.shell.ShellAgent@30:send|hand < ReservationReq:REQUEST [requestID:01104655-d8d2-4681-b966-d199b62c14f6 to:2 duration:5.0 priority:NORMAL ttl:NaN payload:(0 bytes)]
+1554873140375|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|hand > ReservationRsp:AGREE
+1554873144341|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|phy > RxFrameNtf:INFORM[type:CONTROL from:2 to:1 protocol:4 rxTime:1609510631 (3 bytes)]
+1554873144346|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|hand > ReservationStatusNtf:INFORM [requestID:01104655-d8d2-4681-b966-d199b62c14f6 to:2 from:1 status:START payload:(0 bytes)]
+1554873144397|INFO|org.arl.fjage.shell.ShellAgent@30:send|phy < DatagramReq:REQUEST[to:2 protocol:0 (1 bytes)]
+1554873144401|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|phy > AGREE
+1554873144450|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|phy > TxFrameNtf:INFORM[txTime:1610096935 type:DATA]
+1554873146927|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|phy > RxFrameNtf:INFORM[type:DATA from:2 to:1 protocol:12 rxTime:1611900631 (1 bytes)]
+1554873149350|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|hand > ReservationStatusNtf:INFORM [requestID:01104655-d8d2-4681-b966-d199b62c14f6 to:2 from:1 status:END payload:(0 bytes)]
+1554873154890|INFO|org.arl.fjage.shell.ConsoleShell@15:run|> send 2, 6
+1554873154891|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|EVAL: send 2, 6
+1554873154944|INFO|org.arl.fjage.shell.ShellAgent@30:send|hand < ReservationReq:REQUEST [requestID:8782c288-3bc9-416d-86f9-384411b82785 to:2 duration:5.0 priority:NORMAL ttl:NaN payload:(0 bytes)]
+1554873154947|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|hand > ReservationRsp:AGREE
+1554873161803|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|phy > RxFrameNtf:INFORM[type:CONTROL from:2 to:1 protocol:4 rxTime:1626978631 (3 bytes)]
+1554873161814|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|hand > ReservationStatusNtf:INFORM [requestID:8782c288-3bc9-416d-86f9-384411b82785 to:2 from:1 status:START payload:(0 bytes)]
+1554873166829|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|hand > ReservationStatusNtf:INFORM [requestID:8782c288-3bc9-416d-86f9-384411b82785 to:2 from:1 status:END payload:(0 bytes)]
+1554873167100|INFO|org.arl.fjage.shell.ConsoleShell@15:run|> send 2, 7
+1554873167103|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|EVAL: send 2, 7
+1554873167220|INFO|org.arl.fjage.shell.ShellAgent@30:send|hand < ReservationReq:REQUEST [requestID:429396c6-3ce8-4c60-96c5-55f04df43a75 to:2 duration:5.0 priority:NORMAL ttl:NaN payload:(0 bytes)]
+1554873167222|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|hand > ReservationRsp:AGREE
+1554873172019|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|phy > RxFrameNtf:INFORM[type:CONTROL from:2 to:1 protocol:4 rxTime:1637191631 (3 bytes)]
+1554873172021|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|hand > ReservationStatusNtf:INFORM [requestID:429396c6-3ce8-4c60-96c5-55f04df43a75 to:2 from:1 status:START payload:(0 bytes)]
+1554873172042|INFO|org.arl.fjage.shell.ShellAgent@30:send|phy < DatagramReq:REQUEST[to:2 protocol:0 (1 bytes)]
+1554873172057|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|phy > AGREE
+1554873172108|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|phy > TxFrameNtf:INFORM[txTime:1637755935 type:DATA]
+1554873174577|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|phy > RxFrameNtf:INFORM[type:DATA from:2 to:1 protocol:12 rxTime:1639555631 (1 bytes)]
+1554873177023|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|hand > ReservationStatusNtf:INFORM [requestID:429396c6-3ce8-4c60-96c5-55f04df43a75 to:2 from:1 status:END payload:(0 bytes)]
+1554873177071|INFO|org.arl.fjage.shell.ConsoleShell@15:run|>  2, 5
+1554873177072|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|EVAL: 2, 5
+1554873177074|WARNING|org.arl.fjage.shell.GroovyScriptEngine@30:error|Groovy script execution failed
+
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+Script5.groovy: 1: unexpected token: 2 @ line 1, column 1.
+   2, 5
+   ^
+
+1 error
+
+Stack trace: ...
+   org.arl.fjage.shell.GroovyScriptEngine$1.call(GroovyScriptEngine.java:107) ...
+
+1554873177174|INFO|org.arl.fjage.shell.ConsoleShell@15:run|> end 2, 5
+1554873177179|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|EVAL: end 2, 5
+1554873177270|WARNING|org.arl.fjage.shell.GroovyScriptEngine@30:error|Groovy script execution failed
+
+groovy.lang.MissingMethodException: No signature of method: Script6.end() is applicable for argument types: (java.lang.Integer, java.lang.Integer) values: [2, 5]
+Possible solutions: any(), find(), send(org.arl.fjage.Message), rnd(java.lang.Object, java.lang.Object), run(), ps()
+Stack trace: ...
+   org.arl.fjage.shell.BaseGroovyScript.methodMissing(BaseGroovyScript.groovy:604) ...
+   Script6.run(Script6.groovy:1) ...
+   org.arl.fjage.shell.GroovyScriptEngine$1.call(GroovyScriptEngine.java:107) ...
+
+1554873177397|INFO|org.arl.fjage.shell.ConsoleShell@15:run|> nd 2, 5
+1554873177399|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|EVAL: nd 2, 5
+1554873177488|WARNING|org.arl.fjage.shell.GroovyScriptEngine@30:error|Groovy script execution failed
+
+groovy.lang.MissingMethodException: No signature of method: Script7.nd() is applicable for argument types: (java.lang.Integer, java.lang.Integer) values: [2, 5]
+Possible solutions: ps(), any(), find(), rnd(java.lang.Object, java.lang.Object), run(), who()
+Stack trace: ...
+   org.arl.fjage.shell.BaseGroovyScript.methodMissing(BaseGroovyScript.groovy:604) ...
+   Script7.run(Script7.groovy:1) ...
+   org.arl.fjage.shell.GroovyScriptEngine$1.call(GroovyScriptEngine.java:107) ...
+
+1554873177523|INFO|org.arl.fjage.shell.ConsoleShell@15:run|> end 2, 5
+1554873177523|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|EVAL: end 2, 5
+1554873177569|WARNING|org.arl.fjage.shell.GroovyScriptEngine@30:error|Groovy script execution failed
+
+groovy.lang.MissingMethodException: No signature of method: Script8.end() is applicable for argument types: (java.lang.Integer, java.lang.Integer) values: [2, 5]
+Possible solutions: any(), find(), send(org.arl.fjage.Message), rnd(java.lang.Object, java.lang.Object), run(), ps()
+Stack trace: ...
+   org.arl.fjage.shell.BaseGroovyScript.methodMissing(BaseGroovyScript.groovy:604) ...
+   Script8.run(Script8.groovy:1) ...
+   org.arl.fjage.shell.GroovyScriptEngine$1.call(GroovyScriptEngine.java:107) ...
+
+1554873177627|INFO|org.arl.fjage.shell.ConsoleShell@15:run|> end 2, 5
+1554873177628|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|EVAL: end 2, 5
+1554873177768|WARNING|org.arl.fjage.shell.GroovyScriptEngine@30:error|Groovy script execution failed
+
+groovy.lang.MissingMethodException: No signature of method: Script9.end() is applicable for argument types: (java.lang.Integer, java.lang.Integer) values: [2, 5]
+Possible solutions: any(), find(), send(org.arl.fjage.Message), rnd(java.lang.Object, java.lang.Object), run(), ps()
+Stack trace: ...
+   org.arl.fjage.shell.BaseGroovyScript.methodMissing(BaseGroovyScript.groovy:604) ...
+   Script9.run(Script9.groovy:1) ...
+   org.arl.fjage.shell.GroovyScriptEngine$1.call(GroovyScriptEngine.java:107) ...
+
+1554873177862|INFO|org.arl.fjage.shell.ConsoleShell@15:run|> nd 2, 5
+1554873177863|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|EVAL: nd 2, 5
+1554873177939|WARNING|org.arl.fjage.shell.GroovyScriptEngine@30:error|Groovy script execution failed
+
+groovy.lang.MissingMethodException: No signature of method: Script10.nd() is applicable for argument types: (java.lang.Integer, java.lang.Integer) values: [2, 5]
+Possible solutions: ps(), any(), find(), rnd(java.lang.Object, java.lang.Object), run(), who()
+Stack trace: ...
+   org.arl.fjage.shell.BaseGroovyScript.methodMissing(BaseGroovyScript.groovy:604) ...
+   Script10.run(Script10.groovy:1) ...
+   org.arl.fjage.shell.GroovyScriptEngine$1.call(GroovyScriptEngine.java:107) ...
+
+1554873177968|INFO|org.arl.fjage.shell.ConsoleShell@15:run|> end 2, 5
+1554873177971|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|EVAL: end 2, 5
+1554873178053|WARNING|org.arl.fjage.shell.GroovyScriptEngine@30:error|Groovy script execution failed
+
+groovy.lang.MissingMethodException: No signature of method: Script11.end() is applicable for argument types: (java.lang.Integer, java.lang.Integer) values: [2, 5]
+Possible solutions: any(), find(), send(org.arl.fjage.Message), rnd(java.lang.Object, java.lang.Object), run(), ps()
+Stack trace: ...
+   org.arl.fjage.shell.BaseGroovyScript.methodMissing(BaseGroovyScript.groovy:604) ...
+   Script11.run(Script11.groovy:1) ...
+   org.arl.fjage.shell.GroovyScriptEngine$1.call(GroovyScriptEngine.java:107) ...
+
+1554873178169|INFO|org.arl.fjage.shell.ConsoleShell@15:run|> nd 2, 5
+1554873178170|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|EVAL: nd 2, 5
+1554873178229|WARNING|org.arl.fjage.shell.GroovyScriptEngine@30:error|Groovy script execution failed
+
+groovy.lang.MissingMethodException: No signature of method: Script12.nd() is applicable for argument types: (java.lang.Integer, java.lang.Integer) values: [2, 5]
+Possible solutions: ps(), any(), find(), rnd(java.lang.Object, java.lang.Object), run(), who()
+Stack trace: ...
+   org.arl.fjage.shell.BaseGroovyScript.methodMissing(BaseGroovyScript.groovy:604) ...
+   Script12.run(Script12.groovy:1) ...
+   org.arl.fjage.shell.GroovyScriptEngine$1.call(GroovyScriptEngine.java:107) ...
+
+1554873178270|INFO|org.arl.fjage.shell.ConsoleShell@15:run|> end 2, 5
+1554873178275|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|EVAL: end 2, 5
+1554873178321|WARNING|org.arl.fjage.shell.GroovyScriptEngine@30:error|Groovy script execution failed
+
+groovy.lang.MissingMethodException: No signature of method: Script13.end() is applicable for argument types: (java.lang.Integer, java.lang.Integer) values: [2, 5]
+Possible solutions: any(), find(), send(org.arl.fjage.Message), rnd(java.lang.Object, java.lang.Object), run(), ps()
+Stack trace: ...
+   org.arl.fjage.shell.BaseGroovyScript.methodMissing(BaseGroovyScript.groovy:604) ...
+   Script13.run(Script13.groovy:1) ...
+   org.arl.fjage.shell.GroovyScriptEngine$1.call(GroovyScriptEngine.java:107) ...
+
+1554873188039|INFO|org.arl.fjage.shell.ConsoleShell@15:run|> shutdown
+1554873188048|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|EVAL: shutdown
+1554873188112|INFO|org.arl.unet.sim.SimulationMasterContainer@14:run|Stopped listening
+1554873188113|INFO|org.arl.unet.sim.SimulationMasterContainer@30:shutdown|Initiating shutdown...
+1554873188116|INFO|org.arl.unet.sim.SimulationMasterContainer@30:shutdown|All agents have shutdown
+1554873188118|INFO|org.arl.unet.sim.SimulationMasterContainer@17:run|Stopped listening
+1554873188118|INFO|org.arl.unet.sim.SimulationMasterContainer@30:shutdown|Initiating shutdown...
+1554873188123|INFO|org.arl.unet.sim.SimulationMasterContainer@30:shutdown|All agents have shutdown

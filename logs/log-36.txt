@@ -1,0 +1,96 @@
+1554790352076|INFO|org.arl.fjage.shell.GroovyBoot@1:main|fjage Build: fjage-1.4/20-03-2016_16:16:39
+1554790352888|INFO|org.arl.fjage.shell.GroovyBoot@1:main|Running cls://org.arl.unet.sim.initrc
+1554790352891|INFO|org.arl.fjage.shell.GroovyScriptEngine@11:call|RUN: org.arl.unet.sim.initrc
+1554790353019|INFO|org.arl.fjage.shell.GroovyBoot@1:main|Running /home/niwedita/Downloads/unetsim-1.3-linux/unetsim-1.3/test/mul-sim.groovy
+1554790353021|INFO|org.arl.fjage.shell.GroovyScriptEngine@11:call|RUN: /home/niwedita/Downloads/unetsim-1.3-linux/unetsim-1.3/test/mul-sim.groovy
+1554790354091|INFO|org.arl.unet.sim.SimulationMasterContainer@11:openSocket|Listening on 0.0.0.0/0.0.0.0:1101
+1554790354241|INFO|org.arl.fjage.remote.MessageAdapter@11:<clinit>|Groovy detected, using GroovyClassLoader
+1554790354276|INFO|Script1@11:call|Starting console shell
+1554790354451|INFO|Script1@11:invoke|Created static node 1 (1) @ [0, 0, 0]
+1554790354464|INFO|org.arl.unet.sim.SimulationMasterContainer@11:openSocket|Listening on 0.0.0.0/0.0.0.0:1102
+1554790354479|INFO|Script1@11:invoke|Starting TCP shell on port 5102
+1554790354514|INFO|Script1@11:invoke|Created static node 2 (2) @ [1000, 0, 0]
+1554790354516|INFO|org.arl.unet.sim.SimulationMasterContainer@11:openSocket|Listening on 0.0.0.0/0.0.0.0:1103
+1554790354528|INFO|Script1@11:invoke|Starting TCP shell on port 5103
+1554790354642|INFO|Script1@11:invoke|Created static node 3 (3) @ [2000, 0, 0]
+1554790354645|INFO|org.arl.unet.sim.SimulationMasterContainer@11:openSocket|Listening on 0.0.0.0/0.0.0.0:1104
+1554790354658|INFO|Script1@11:invoke|Starting TCP shell on port 5104
+1554790354716|INFO|Script1@11:invoke|Created static node 4 (4) @ [3000, 0, 0]
+1554790354749|INFO|Script1@11:invoke| --- BEGIN SIMULATION #1 ---
+1554790354768|INFO|org.arl.unet.sim.SimulationMasterContainer@11:init|Initializing agents...
+1554790354770|INFO|org.arl.fjage.shell.ShellAgent@26:init|Agent shell init
+1554790354771|INFO|MulAgent@27:init|Loading agent mul on 1
+1554790354774|INFO|org.arl.unet.sim.HalfDuplexModem@28:init|Loading agent phy v1.3/17-02-2016_02:36:21 on 1
+1554790354777|INFO|org.arl.unet.nodeinfo.NodeInfo@29:init|Loading agent node v1.3/17-02-2016_02:36:21 on 1
+1554790354778|INFO|<1>@30:invoke|Loading simulator : SimulationAgent
+1554790354872|INFO|org.arl.unet.sim.SimulationMasterContainer@11:init|Agents ready...
+1554790354873|INFO|org.arl.unet.sim.SimulationMasterContainer@11:init|Initializing agents...
+1554790354885|INFO|org.arl.fjage.shell.ShellAgent@31:init|Agent shell init
+1554790354908|INFO|MulAgent@32:init|Loading agent mul on 2
+1554790354908|INFO|org.arl.unet.sim.HalfDuplexModem@33:init|Loading agent phy v1.3/17-02-2016_02:36:21 on 2
+1554790354917|INFO|org.arl.unet.nodeinfo.NodeInfo@34:init|Loading agent node v1.3/17-02-2016_02:36:21 on 2
+1554790354927|INFO|<2>@35:invoke|Loading simulator : SimulationAgent
+1554790355025|INFO|org.arl.unet.sim.SimulationMasterContainer@11:init|Agents ready...
+1554790355027|INFO|org.arl.unet.sim.SimulationMasterContainer@11:init|Initializing agents...
+1554790355028|INFO|org.arl.fjage.shell.ShellAgent@36:init|Agent shell init
+1554790355028|INFO|org.arl.unet.sim.HalfDuplexModem@37:init|Loading agent phy v1.3/17-02-2016_02:36:21 on 3
+1554790355029|INFO|MySimpleHandshakeMac@38:init|Loading agent hand on 3
+1554790355037|INFO|org.arl.unet.nodeinfo.NodeInfo@39:init|Loading agent node v1.3/17-02-2016_02:36:21 on 3
+1554790355043|INFO|<3>@40:invoke|Loading simulator : SimulationAgent
+1554790355148|INFO|org.arl.unet.sim.SimulationMasterContainer@11:init|Agents ready...
+1554790355148|INFO|org.arl.unet.sim.SimulationMasterContainer@11:init|Initializing agents...
+1554790355159|INFO|org.arl.fjage.shell.ShellAgent@41:init|Agent shell init
+1554790355168|INFO|org.arl.unet.sim.HalfDuplexModem@42:init|Loading agent phy v1.3/17-02-2016_02:36:21 on 4
+1554790355168|INFO|org.arl.unet.nodeinfo.NodeInfo@44:init|Loading agent node v1.3/17-02-2016_02:36:21 on 4
+1554790355168|INFO|<4>@45:invoke|Loading simulator : SimulationAgent
+1554790355171|INFO|MySimpleHandshakeMac@43:init|Loading agent hand on 4
+1554790355268|INFO|org.arl.unet.sim.SimulationMasterContainer@11:init|Agents ready...
+1554790355269|INFO|org.arl.unet.sim.SimulationMasterContainer@11:start|Starting container...
+1554790355269|INFO|org.arl.unet.sim.SimulationMasterContainer@11:start|Starting container...
+1554790355269|INFO|org.arl.unet.sim.SimulationMasterContainer@11:start|Starting container...
+1554790355269|INFO|org.arl.unet.sim.SimulationMasterContainer@11:start|Starting container...
+1554790355270|INFO|org.arl.unet.nodeinfo.NodeInfo@39:startup|Node name is 3, address is 3
+1554790355273|INFO|org.arl.unet.nodeinfo.NodeInfo@29:startup|Node name is 1, address is 1
+1554790355273|INFO|org.arl.unet.nodeinfo.NodeInfo@44:startup|Node name is 4, address is 4
+1554790355273|INFO|org.arl.unet.nodeinfo.NodeInfo@34:startup|Node name is 2, address is 2
+1554790355277|INFO|org.arl.fjage.shell.GroovyScriptEngine@46:call|RUN: org.arl.fjage.shell.fshrc
+1554790355287|INFO|org.arl.fjage.shell.GroovyScriptEngine@47:call|RUN: org.arl.fjage.shell.fshrc
+1554790355333|INFO|org.arl.fjage.shell.GroovyScriptEngine@49:call|RUN: org.arl.fjage.shell.fshrc
+1554790355333|INFO|org.arl.fjage.shell.GroovyScriptEngine@48:call|RUN: org.arl.fjage.shell.fshrc
+1554790355335|INFO|org.arl.fjage.shell.GroovyScriptEngine@46:call|RUN: res://org/arl/unet/shell/fshrc.groovy
+1554790355335|INFO|org.arl.fjage.shell.GroovyScriptEngine@47:call|RUN: res://org/arl/unet/shell/fshrc.groovy
+1554790355336|INFO|org.arl.fjage.shell.GroovyScriptEngine@49:call|RUN: res://org/arl/unet/shell/fshrc.groovy
+1554790355337|INFO|org.arl.fjage.shell.GroovyScriptEngine@48:call|RUN: res://org/arl/unet/shell/fshrc.groovy
+1554790355734|INFO|Script1@49:call|cls://org.arl.unet.shell/fshrc_jlink not found, skipping it!
+1554790355745|INFO|Script1@46:call|cls://org.arl.unet.shell/fshrc_jlink not found, skipping it!
+1554790355756|INFO|Script1@47:call|cls://org.arl.unet.shell/fshrc_jlink not found, skipping it!
+1554790355756|INFO|Script1@48:call|cls://org.arl.unet.shell/fshrc_jlink not found, skipping it!
+1554790355764|INFO|org.arl.fjage.shell.GroovyScriptEngine@46:call|RUN: /home/niwedita/Downloads/unetsim-1.3-linux/unetsim-1.3/etc/fshrc.groovy
+1554790355773|INFO|org.arl.fjage.shell.GroovyScriptEngine@49:call|RUN: /home/niwedita/Downloads/unetsim-1.3-linux/unetsim-1.3/etc/fshrc.groovy
+1554790355779|INFO|org.arl.fjage.shell.GroovyScriptEngine@47:call|RUN: /home/niwedita/Downloads/unetsim-1.3-linux/unetsim-1.3/etc/fshrc.groovy
+1554790355778|INFO|org.arl.fjage.shell.GroovyScriptEngine@48:call|RUN: /home/niwedita/Downloads/unetsim-1.3-linux/unetsim-1.3/etc/fshrc.groovy
+1554790355928|INFO|org.arl.fjage.shell.GroovyScriptEngine@46:call|RUN: /home/niwedita/Downloads/unetsim-1.3-linux/unetsim-1.3/test/fshrc.groovy
+1554790355968|INFO|org.arl.fjage.shell.TcpShell@18:run|Listening on port 5102
+1554790355983|INFO|org.arl.fjage.shell.TcpShell@24:run|Listening on port 5104
+1554790356003|INFO|org.arl.fjage.shell.TcpShell@21:run|Listening on port 5103
+1554790362959|INFO|org.arl.fjage.shell.ConsoleShell@15:run|> send 2, 5
+1554790362960|INFO|org.arl.fjage.shell.GroovyScriptEngine@46:call|EVAL: send 2, 5
+1554790363046|INFO|org.arl.fjage.shell.ShellAgent@46:send|phy < DatagramReq:REQUEST[to:2 protocol:0 (1 bytes)]
+1554790363051|INFO|org.arl.fjage.shell.ShellAgent@26:onReceive|phy > AGREE
+1554790363104|INFO|org.arl.fjage.shell.ShellAgent@26:onReceive|phy > TxFrameNtf:INFORM[txTime:3290066411 type:DATA]
+1554790365580|INFO|org.arl.fjage.shell.ShellAgent@26:onReceive|phy > RxFrameNtf:INFORM[type:DATA from:2 to:1 protocol:4 rxTime:3291866107 (1 bytes)]
+1554790366856|INFO|org.arl.fjage.shell.ShellAgent@26:onReceive|phy > BadFrameNtf:INFORM[type:DATA rxTime:3293020803]
+1554790438196|INFO|org.arl.fjage.shell.ConsoleShell@15:run|> shutdown
+1554790438196|INFO|org.arl.fjage.shell.GroovyScriptEngine@46:call|EVAL: shutdown
+1554790438239|INFO|org.arl.unet.sim.SimulationMasterContainer@46:shutdown|Initiating shutdown...
+1554790438241|INFO|org.arl.unet.sim.SimulationMasterContainer@46:shutdown|All agents have shutdown
+1554790438241|INFO|org.arl.unet.sim.SimulationMasterContainer@46:shutdown|Initiating shutdown...
+1554790438241|INFO|org.arl.unet.sim.SimulationMasterContainer@17:run|Stopped listening
+1554790438250|INFO|org.arl.unet.sim.SimulationMasterContainer@46:shutdown|All agents have shutdown
+1554790438254|INFO|org.arl.unet.sim.SimulationMasterContainer@20:run|Stopped listening
+1554790438255|INFO|org.arl.unet.sim.SimulationMasterContainer@46:shutdown|Initiating shutdown...
+1554790438256|INFO|org.arl.unet.sim.SimulationMasterContainer@46:shutdown|All agents have shutdown
+1554790438256|INFO|org.arl.unet.sim.SimulationMasterContainer@46:shutdown|Initiating shutdown...
+1554790438256|INFO|org.arl.unet.sim.SimulationMasterContainer@23:run|Stopped listening
+1554790438256|INFO|org.arl.unet.sim.SimulationMasterContainer@46:shutdown|All agents have shutdown
+1554790438263|INFO|org.arl.unet.sim.SimulationMasterContainer@14:run|Stopped listening

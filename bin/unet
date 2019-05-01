@@ -1,0 +1,134 @@
+#!/bin/bash
+#
+# Usage:
+#   unet [-cp <classpath-entry>]... [<jvm-options>]... sim <sim-script>
+#   unet [-cp <classpath-entry>]... [<jvm-options>]... sh [<hostname>] [<container-name>]
+#   unet [-cp <classpath-entry>]... [<jvm-options>]... csh [<hostname>] [<container-name>]
+#   unet [-cp <classpath-entry>]... [<jvm-options>]... <script> [<args>]...
+
+# figure out home directory
+if [ -z "$UNET_HOME" ]
+then
+  UNET_HOME=`dirname $0`
+  UNET_HOME=`dirname $UNET_HOME`
+fi
+
+# figure out lib directory
+if [ -d "$UNET_HOME/lib" ]
+then
+  # development
+  UNET_LIB="$UNET_HOME/lib"
+elif [ -d "$UNET_HOME/UnetIDE.app/Contents/Java" ]
+then
+  # OS X
+  UNET_LIB="$UNET_HOME/UnetIDE.app/Contents/Java"
+elif [ -d "$UNET_HOME/app" ]
+then
+  # Windows and Linux
+  UNET_LIB="$UNET_HOME/app"
+fi
+
+# figure out JRE directory for bundled JRE
+if [ -d "$UNET_HOME/UnetIDE.app/Contents/PlugIns/Java.runtime/Contents/Home/jre/bin" ]
+then
+  # OS X
+  JAVA_HOME="$UNET_HOME/UnetIDE.app/Contents/PlugIns/Java.runtime/Contents/Home/jre"
+  JAVA="$JAVA_HOME/bin/java"
+elif [ -d "$UNET_HOME/runtime/bin" ]
+then
+  # Windows and Linux
+  JAVA_HOME="$UNET_HOME/runtime"
+  JAVA="$JAVA_HOME/bin/java"
+else
+  JAVA="java"
+fi
+
+# compose classpath
+CLASSPATH=.`find $UNET_LIB -name '*.jar' -exec /bin/echo -n :'{}' \;`
+
+# process command line options
+OPTS=
+while [[ $1 == -* ]]
+do
+  OPT=$1
+  if [ $OPT = "-cp" ]
+  then
+    shift
+    CLASSPATH="$1:$CLASSPATH"
+  else
+    OPTS="$OPTS $OPT"
+  fi
+  shift
+done
+
+# process command
+ARGS=
+SIM=
+CMD=$1
+shift
+if [ -z "$CMD" ]
+then
+  cat <<EOF
+
+Usage:
+  $0 sim <sim-script>                       # simulation
+  $0 sh [<hostname>] [<port-number>]        # GUI shell
+  $0 csh [<hostname>] [<port-number>]       # console shell
+  $0 <script>                               # run script
+
+EOF
+  exit 1
+elif [ $CMD = "sim" ]
+then
+  if [ -z "$1" ]
+  then
+    echo "Usage: $0 sim <sim-script>"
+    exit 1
+  fi
+  CMD="cls://org.arl.unet.sim.initrc $1"
+  DIR=$(dirname $1)
+  CLASSPATH="$DIR:$CLASSPATH"
+  SIM=1
+elif [ $CMD = "sh" ]
+then
+  CMD="cls://org.arl.unet.shell.initrc"
+  OPTS="$OPTS -Dfjage.ip=$1 -Dfjage.port=$2 -Dfjage.gui=true"
+elif [ $CMD = "csh" ]
+then
+  CMD="cls://org.arl.unet.shell.initrc"
+  OPTS="$OPTS -Dfjage.ip=$1 -Dfjage.port=$2 -Dfjage.gui=false"
+else
+  DIR=$(dirname $CMD)
+  CLASSPATH="$DIR:$CLASSPATH"
+  while [ -n "$1" ]
+  do
+    ARGS="$ARGS -arg:$1"
+    shift
+  done
+fi
+
+# Cygwin/Windows uses a ";" classpath separator and does not support color
+if [ $(expr "$(uname -s)" : 'CYGWIN.*') -gt 0 ];then
+  CLASSPATH=`echo "$CLASSPATH" | sed 's/:/;/g'`
+  ARGS="-nocolor $ARGS"
+  OPTS="-Djline.terminal=jline.UnixTerminal $OPTS"
+fi
+
+# check if simulation shebang found even if user didn't say "sim"
+if [ -z "$SIM" ]
+then
+  if [ -e "$CMD" ]
+  then
+    head -1 $CMD | grep -i '^//! *sim' > /dev/null
+    if [ $? = "0" ]
+    then
+      DIR=$(dirname $CMD)
+      CLASSPATH="$DIR:$CLASSPATH"
+      CMD="cls://org.arl.unet.sim.initrc $CMD"
+    fi
+  fi
+fi
+
+# run unet
+mkdir -p logs
+$JAVA -cp "$CLASSPATH" -Djava.net.preferIPv4Stack=true -Dhome="$UNET_HOME" $OPTS org.arl.fjage.shell.GroovyBoot $ARGS $CMD

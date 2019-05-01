@@ -1,0 +1,27 @@
+1554833113953|INFO|org.arl.fjage.shell.GroovyBoot@1:main|fjage Build: fjage-1.4/20-03-2016_16:16:39
+1554833115070|INFO|org.arl.fjage.shell.GroovyBoot@1:main|Running cls://org.arl.unet.sim.initrc
+1554833115073|INFO|org.arl.fjage.shell.GroovyScriptEngine@11:call|RUN: org.arl.unet.sim.initrc
+1554833115385|INFO|org.arl.fjage.shell.GroovyBoot@1:main|Running /home/niwedita/Downloads/unetsim-1.3-linux/unetsim-1.3/test/handshake-sim.groovy
+1554833115386|INFO|org.arl.fjage.shell.GroovyScriptEngine@11:call|RUN: /home/niwedita/Downloads/unetsim-1.3-linux/unetsim-1.3/test/handshake-sim.groovy
+1554833117073|INFO|org.arl.unet.sim.SimulationMasterContainer@11:openSocket|Listening on 0.0.0.0/0.0.0.0:1103
+1554833117236|INFO|org.arl.fjage.remote.MessageAdapter@11:<clinit>|Groovy detected, using GroovyClassLoader
+1554833117340|INFO|Script1@11:call|Starting console shell
+1554833117877|INFO|Script1@11:invoke|Created static node 1 (1) @ [0, 0, 0]
+1554833117881|INFO|org.arl.unet.sim.SimulationMasterContainer@11:openSocket|Listening on 0.0.0.0/0.0.0.0:1104
+1554833117896|INFO|Script1@11:invoke|Starting TCP shell on port 5103
+1554833117972|INFO|Script1@11:invoke|Created static node 2 (2) @ [1000, 0, 0]
+1554833117985|WARNING|org.arl.fjage.shell.GroovyScriptEngine@11:error|Groovy script execution failed
+
+java.net.BindException: Address already in use
+Stack trace: ...
+   org.arl.fjage.remote.MasterContainer.openSocket(MasterContainer.java:290)
+   org.arl.fjage.remote.MasterContainer.<init>(MasterContainer.java:79)
+   org.arl.unet.sim.SimulationMasterContainer.<init>(initrc.groovy:125) ...
+   org.arl.unet.sim.initrc$_run_closure9.doCall(initrc.groovy:244) ...
+   handshake-sim$_run_closure1.doCall(handshake-sim.groovy:37)
+   handshake-sim$_run_closure1.doCall(handshake-sim.groovy) ...
+   org.arl.unet.sim.initrc$_run_closure11.doCall(initrc.groovy:362)
+   org.arl.unet.sim.initrc$_run_closure11.doCall(initrc.groovy) ...
+   handshake-sim.run(handshake-sim.groovy:29) ...
+   org.arl.fjage.shell.GroovyScriptEngine$4.call(GroovyScriptEngine.java:263) ...
+

@@ -1,0 +1,77 @@
+1554459756848|INFO|org.arl.fjage.shell.GroovyBoot@1:main|fjage Build: fjage-1.4/20-03-2016_16:16:39
+1554459757613|INFO|org.arl.fjage.shell.GroovyBoot@1:main|Running cls://org.arl.unet.sim.initrc
+1554459757623|INFO|org.arl.fjage.shell.GroovyScriptEngine@11:call|RUN: org.arl.unet.sim.initrc
+1554459757902|INFO|org.arl.fjage.shell.GroovyBoot@1:main|Running /home/niwedita/Downloads/unetsim-1.3-linux/unetsim-1.3/test1/handshake-sim.groovy
+1554459757903|INFO|org.arl.fjage.shell.GroovyScriptEngine@11:call|RUN: /home/niwedita/Downloads/unetsim-1.3-linux/unetsim-1.3/test1/handshake-sim.groovy
+1554459759242|INFO|org.arl.unet.sim.SimulationMasterContainer@11:openSocket|Listening on 0.0.0.0/0.0.0.0:1101
+1554459759425|INFO|org.arl.fjage.remote.MessageAdapter@11:<clinit>|Groovy detected, using GroovyClassLoader
+1554459759494|INFO|Script1@11:call|Starting console shell
+1554459759882|INFO|Script1@11:invoke|Created static node 1 (1) @ [0, 0, 0]
+1554459759891|INFO|org.arl.unet.sim.SimulationMasterContainer@11:openSocket|Listening on 0.0.0.0/0.0.0.0:1102
+1554459759900|INFO|Script1@11:invoke|Starting TCP shell on port 5102
+1554459759967|INFO|Script1@11:invoke|Created static node 2 (2) @ [1000, 0, 0]
+1554459759989|INFO|Script1@11:invoke| --- BEGIN SIMULATION #1 ---
+1554459759993|INFO|org.arl.unet.sim.SimulationMasterContainer@11:init|Initializing agents...
+1554459759995|INFO|org.arl.fjage.shell.ShellAgent@20:init|Agent shell init
+1554459759996|INFO|org.arl.unet.sim.HalfDuplexModem@21:init|Loading agent phy v1.3/17-02-2016_02:36:21 on 1
+1554459760000|INFO|MySimpleHandshakeMac@22:init|Loading agent hand on 1
+1554459760009|INFO|org.arl.unet.nodeinfo.NodeInfo@23:init|Loading agent node v1.3/17-02-2016_02:36:21 on 1
+1554459760021|INFO|<1>@24:invoke|Loading simulator : SimulationAgent
+1554459760119|INFO|org.arl.unet.sim.SimulationMasterContainer@11:init|Agents ready...
+1554459760119|INFO|org.arl.unet.sim.SimulationMasterContainer@11:init|Initializing agents...
+1554459760134|INFO|org.arl.fjage.shell.ShellAgent@25:init|Agent shell init
+1554459760147|INFO|MySimpleHandshakeMac@27:init|Loading agent hand on 2
+1554459760148|INFO|org.arl.unet.nodeinfo.NodeInfo@28:init|Loading agent node v1.3/17-02-2016_02:36:21 on 2
+1554459760157|INFO|org.arl.unet.sim.HalfDuplexModem@26:init|Loading agent phy v1.3/17-02-2016_02:36:21 on 2
+1554459760158|INFO|<2>@29:invoke|Loading simulator : SimulationAgent
+1554459760251|INFO|org.arl.unet.sim.SimulationMasterContainer@11:init|Agents ready...
+1554459760252|INFO|org.arl.unet.sim.SimulationMasterContainer@11:start|Starting container...
+1554459760253|INFO|org.arl.unet.nodeinfo.NodeInfo@23:startup|Node name is 1, address is 1
+1554459760267|INFO|org.arl.unet.sim.SimulationMasterContainer@11:start|Starting container...
+1554459760268|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|RUN: org.arl.fjage.shell.fshrc
+1554459760269|INFO|org.arl.unet.nodeinfo.NodeInfo@28:startup|Node name is 2, address is 2
+1554459760281|INFO|org.arl.fjage.shell.GroovyScriptEngine@31:call|RUN: org.arl.fjage.shell.fshrc
+1554459760294|INFO|org.arl.fjage.shell.GroovyScriptEngine@31:call|RUN: res://org/arl/unet/shell/fshrc.groovy
+1554459760297|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|RUN: res://org/arl/unet/shell/fshrc.groovy
+1554459760951|INFO|Script1@31:call|cls://org.arl.unet.shell/fshrc_jlink not found, skipping it!
+1554459760967|INFO|Script1@30:call|cls://org.arl.unet.shell/fshrc_jlink not found, skipping it!
+1554459761004|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|RUN: /home/niwedita/Downloads/unetsim-1.3-linux/unetsim-1.3/etc/fshrc.groovy
+1554459761016|INFO|org.arl.fjage.shell.GroovyScriptEngine@31:call|RUN: /home/niwedita/Downloads/unetsim-1.3-linux/unetsim-1.3/etc/fshrc.groovy
+1554459761166|INFO|org.arl.fjage.shell.TcpShell@18:run|Listening on port 5102
+1554459761227|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|RUN: /home/niwedita/Downloads/unetsim-1.3-linux/unetsim-1.3/test1/fshrc.groovy
+1554459767311|INFO|org.arl.fjage.shell.ConsoleShell@15:run|> send 1, 5
+1554459767322|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|EVAL: send 1, 5
+1554459767441|INFO|org.arl.fjage.shell.ShellAgent@30:send|phy < ReservationReq:REQUEST [requestID:2a78d58e-68dc-428e-985d-f7a906697b33 to:2 duration:5.0 priority:NORMAL ttl:NaN payload:(0 bytes)]
+1554459767507|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|phy > NOT_UNDERSTOOD
+1554459773527|WARNING|org.arl.fjage.shell.GroovyScriptEngine@30:error|Groovy script execution failed
+
+groovy.lang.MissingPropertyException: No such property: pdu for class: fshrc
+Possible solutions: ps, OFF, who, ALL
+Stack trace: ...
+   org.arl.fjage.shell.BaseGroovyScript.propertyMissing(BaseGroovyScript.groovy:593) ...
+   fshrc$_run_closure1.doCall(fshrc.groovy:21) ...
+   Script2.run(Script2.groovy:1) ...
+   org.arl.fjage.shell.GroovyScriptEngine$1.call(GroovyScriptEngine.java:107) ...
+
+1554459784338|INFO|org.arl.fjage.shell.ConsoleShell@15:run|> send 2, 5
+1554459784345|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|EVAL: send 2, 5
+1554459784429|INFO|org.arl.fjage.shell.ShellAgent@30:send|phy < ReservationReq:REQUEST [requestID:b2eb90e0-7235-4651-a2de-8c968ff88b62 to:2 duration:5.0 priority:NORMAL ttl:NaN payload:(0 bytes)]
+1554459784434|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|phy > NOT_UNDERSTOOD
+1554459790438|WARNING|org.arl.fjage.shell.GroovyScriptEngine@30:error|Groovy script execution failed
+
+groovy.lang.MissingPropertyException: No such property: pdu for class: fshrc
+Possible solutions: ps, OFF, who, ALL
+Stack trace: ...
+   org.arl.fjage.shell.BaseGroovyScript.propertyMissing(BaseGroovyScript.groovy:593) ...
+   fshrc$_run_closure1.doCall(fshrc.groovy:21) ...
+   Script3.run(Script3.groovy:1) ...
+   org.arl.fjage.shell.GroovyScriptEngine$1.call(GroovyScriptEngine.java:107) ...
+
+1554460508237|INFO|org.arl.fjage.shell.ConsoleShell@15:run|> shutdown
+1554460508252|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|EVAL: shutdown
+1554460508437|INFO|org.arl.unet.sim.SimulationMasterContainer@14:run|Stopped listening
+1554460508437|INFO|org.arl.unet.sim.SimulationMasterContainer@30:shutdown|Initiating shutdown...
+1554460508470|INFO|org.arl.unet.sim.SimulationMasterContainer@30:shutdown|All agents have shutdown
+1554460508470|INFO|org.arl.unet.sim.SimulationMasterContainer@30:shutdown|Initiating shutdown...
+1554460508471|INFO|org.arl.unet.sim.SimulationMasterContainer@17:run|Stopped listening
+1554460508475|INFO|org.arl.unet.sim.SimulationMasterContainer@30:shutdown|All agents have shutdown

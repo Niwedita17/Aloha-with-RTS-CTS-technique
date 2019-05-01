@@ -1,0 +1,104 @@
+1554878055535|INFO|org.arl.fjage.shell.GroovyBoot@1:main|fjage Build: fjage-1.4/20-03-2016_16:16:39
+1554878056639|INFO|org.arl.fjage.shell.GroovyBoot@1:main|Running cls://org.arl.unet.sim.initrc
+1554878056645|INFO|org.arl.fjage.shell.GroovyScriptEngine@11:call|RUN: org.arl.unet.sim.initrc
+1554878056945|INFO|org.arl.fjage.shell.GroovyBoot@1:main|Running /home/niwedita/Downloads/unetsim-1.3-linux/unetsim-1.3/test/handshake-sim.groovy
+1554878056948|INFO|org.arl.fjage.shell.GroovyScriptEngine@11:call|RUN: /home/niwedita/Downloads/unetsim-1.3-linux/unetsim-1.3/test/handshake-sim.groovy
+1554878058338|INFO|org.arl.unet.sim.SimulationMasterContainer@11:openSocket|Listening on 0.0.0.0/0.0.0.0:1103
+1554878058469|INFO|org.arl.fjage.remote.MessageAdapter@11:<clinit>|Groovy detected, using GroovyClassLoader
+1554878058556|INFO|Script1@11:call|Starting console shell
+1554878058892|INFO|Script1@11:invoke|Created static node 1 (1) @ [0, 0, 0]
+1554878058894|INFO|org.arl.unet.sim.SimulationMasterContainer@11:openSocket|Listening on 0.0.0.0/0.0.0.0:1104
+1554878058897|INFO|Script1@11:invoke|Starting TCP shell on port 5103
+1554878058937|INFO|Script1@11:invoke|Created static node 2 (2) @ [1000, 0, 0]
+1554878058984|INFO|Script1@11:invoke| --- BEGIN SIMULATION #1 ---
+1554878058993|INFO|org.arl.unet.sim.SimulationMasterContainer@11:init|Initializing agents...
+1554878059037|INFO|org.arl.fjage.shell.ShellAgent@20:init|Agent shell init
+1554878059058|INFO|MySimpleHandshakeMac@22:init|Loading agent hand on 1
+1554878059061|INFO|<1>@24:invoke|Loading simulator : SimulationAgent
+1554878059076|INFO|org.arl.unet.nodeinfo.NodeInfo@23:init|Loading agent node v1.3/17-02-2016_02:36:21 on 1
+1554878059076|INFO|org.arl.unet.sim.HalfDuplexModem@21:init|Loading agent phy v1.3/17-02-2016_02:36:21 on 1
+1554878059155|INFO|org.arl.unet.sim.SimulationMasterContainer@11:init|Agents ready...
+1554878059155|INFO|org.arl.unet.sim.SimulationMasterContainer@11:init|Initializing agents...
+1554878059159|INFO|org.arl.fjage.shell.ShellAgent@25:init|Agent shell init
+1554878059170|INFO|org.arl.unet.sim.HalfDuplexModem@26:init|Loading agent phy v1.3/17-02-2016_02:36:21 on 2
+1554878059170|INFO|MySimpleHandshakeMac@27:init|Loading agent hand on 2
+1554878059178|INFO|org.arl.unet.nodeinfo.NodeInfo@28:init|Loading agent node v1.3/17-02-2016_02:36:21 on 2
+1554878059178|INFO|<2>@29:invoke|Loading simulator : SimulationAgent
+1554878059270|INFO|org.arl.unet.sim.SimulationMasterContainer@11:init|Agents ready...
+1554878059270|INFO|org.arl.unet.sim.SimulationMasterContainer@11:start|Starting container...
+1554878059270|INFO|org.arl.unet.sim.SimulationMasterContainer@11:start|Starting container...
+1554878059271|INFO|org.arl.unet.nodeinfo.NodeInfo@23:startup|Node name is 1, address is 1
+1554878059275|INFO|org.arl.unet.nodeinfo.NodeInfo@28:startup|Node name is 2, address is 2
+1554878059320|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|RUN: org.arl.fjage.shell.fshrc
+1554878059329|INFO|org.arl.fjage.shell.GroovyScriptEngine@31:call|RUN: org.arl.fjage.shell.fshrc
+1554878059347|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|RUN: res://org/arl/unet/shell/fshrc.groovy
+1554878059367|INFO|org.arl.fjage.shell.GroovyScriptEngine@31:call|RUN: res://org/arl/unet/shell/fshrc.groovy
+1554878060061|INFO|Script1@30:call|cls://org.arl.unet.shell/fshrc_jlink not found, skipping it!
+1554878060071|INFO|Script1@31:call|cls://org.arl.unet.shell/fshrc_jlink not found, skipping it!
+1554878060124|INFO|org.arl.fjage.shell.GroovyScriptEngine@31:call|RUN: /home/niwedita/Downloads/unetsim-1.3-linux/unetsim-1.3/etc/fshrc.groovy
+1554878060132|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|RUN: /home/niwedita/Downloads/unetsim-1.3-linux/unetsim-1.3/etc/fshrc.groovy
+1554878060323|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|RUN: /home/niwedita/Downloads/unetsim-1.3-linux/unetsim-1.3/test/fshrc2.groovy
+1554878060356|INFO|org.arl.fjage.shell.TcpShell@18:run|Listening on port 5103
+1554878063878|INFO|org.arl.fjage.shell.ConsoleShell@15:run|> send 2, 15
+1554878063890|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|EVAL: send 2, 15
+1554878063929|INFO|org.arl.fjage.shell.ShellAgent@30:send|hand < ReservationReq:REQUEST [requestID:8c8bf2cb-4c1a-40c1-9f95-fd6747e01a3a to:2 duration:5.0 priority:NORMAL ttl:NaN payload:(0 bytes)]
+1554878063947|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|hand > ReservationRsp:AGREE
+1554878068332|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|phy > RxFrameNtf:INFORM[type:CONTROL from:2 to:1 protocol:4 rxTime:3258391005 (3 bytes)]
+1554878068357|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|hand > ReservationStatusNtf:INFORM [requestID:8c8bf2cb-4c1a-40c1-9f95-fd6747e01a3a to:2 from:1 status:START payload:(0 bytes)]
+1554878068398|INFO|org.arl.fjage.shell.ShellAgent@30:send|phy < DatagramReq:REQUEST[to:2 protocol:0 (1 bytes)]
+1554878068407|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|phy > AGREE
+1554878068455|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|phy > TxFrameNtf:INFORM[txTime:3258968309 type:DATA]
+1554878070922|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|phy > RxFrameNtf:INFORM[type:DATA from:2 to:1 protocol:12 rxTime:3260794005 (1 bytes)]
+1554878073354|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|hand > ReservationStatusNtf:INFORM [requestID:8c8bf2cb-4c1a-40c1-9f95-fd6747e01a3a to:2 from:1 status:END payload:(0 bytes)]
+1554878078332|INFO|org.arl.fjage.shell.ConsoleShell@15:run|> send 2, 8
+1554878078340|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|EVAL: send 2, 8
+1554878078406|INFO|org.arl.fjage.shell.ShellAgent@30:send|hand < ReservationReq:REQUEST [requestID:386720c8-f1f2-408c-99fc-ead51a4ffb3c to:2 duration:5.0 priority:NORMAL ttl:NaN payload:(0 bytes)]
+1554878078408|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|hand > ReservationRsp:AGREE
+1554878083232|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|phy > RxFrameNtf:INFORM[type:CONTROL from:2 to:1 protocol:4 rxTime:3273297005 (3 bytes)]
+1554878083237|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|hand > ReservationStatusNtf:INFORM [requestID:386720c8-f1f2-408c-99fc-ead51a4ffb3c to:2 from:1 status:START payload:(0 bytes)]
+1554878083249|INFO|org.arl.fjage.shell.ShellAgent@30:send|phy < DatagramReq:REQUEST[to:2 protocol:0 (1 bytes)]
+1554878083251|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|phy > AGREE
+1554878083301|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|phy > TxFrameNtf:INFORM[txTime:3273814309 type:DATA]
+1554878085760|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|phy > RxFrameNtf:INFORM[type:DATA from:2 to:1 protocol:12 rxTime:3275631005 (1 bytes)]
+1554878088238|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|hand > ReservationStatusNtf:INFORM [requestID:386720c8-f1f2-408c-99fc-ead51a4ffb3c to:2 from:1 status:END payload:(0 bytes)]
+1554878091326|INFO|org.arl.fjage.shell.ConsoleShell@15:run|> send 2, 6
+1554878091335|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|EVAL: send 2, 6
+1554878091409|INFO|org.arl.fjage.shell.ShellAgent@30:send|hand < ReservationReq:REQUEST [requestID:91f7b3d7-7130-437a-a243-31b718eb381e to:2 duration:5.0 priority:NORMAL ttl:NaN payload:(0 bytes)]
+1554878091413|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|hand > ReservationRsp:AGREE
+1554878095020|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|phy > RxFrameNtf:INFORM[type:CONTROL from:2 to:1 protocol:4 rxTime:3285087005 (3 bytes)]
+1554878095022|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|hand > ReservationStatusNtf:INFORM [requestID:91f7b3d7-7130-437a-a243-31b718eb381e to:2 from:1 status:START payload:(0 bytes)]
+1554878095033|INFO|org.arl.fjage.shell.ShellAgent@30:send|phy < DatagramReq:REQUEST[to:2 protocol:0 (1 bytes)]
+1554878095034|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|phy > AGREE
+1554878095102|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|phy > TxFrameNtf:INFORM[txTime:3285598309 type:DATA]
+1554878097536|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|phy > RxFrameNtf:INFORM[type:DATA from:2 to:1 protocol:12 rxTime:3287409005 (1 bytes)]
+1554878100023|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|hand > ReservationStatusNtf:INFORM [requestID:91f7b3d7-7130-437a-a243-31b718eb381e to:2 from:1 status:END payload:(0 bytes)]
+1554878106398|INFO|org.arl.fjage.shell.ConsoleShell@15:run|> send 2, 9
+1554878106400|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|EVAL: send 2, 9
+1554878106509|INFO|org.arl.fjage.shell.ShellAgent@30:send|hand < ReservationReq:REQUEST [requestID:3d5037ec-7827-479c-b5db-956fa093637b to:2 duration:5.0 priority:NORMAL ttl:NaN payload:(0 bytes)]
+1554878106515|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|hand > ReservationRsp:AGREE
+1554878110952|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|phy > RxFrameNtf:INFORM[type:CONTROL from:2 to:1 protocol:4 rxTime:3301013005 (3 bytes)]
+1554878110955|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|hand > ReservationStatusNtf:INFORM [requestID:3d5037ec-7827-479c-b5db-956fa093637b to:2 from:1 status:START payload:(0 bytes)]
+1554878110999|INFO|org.arl.fjage.shell.ShellAgent@30:send|phy < DatagramReq:REQUEST[to:2 protocol:0 (1 bytes)]
+1554878111000|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|phy > AGREE
+1554878111052|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|phy > TxFrameNtf:INFORM[txTime:3301564309 type:DATA]
+1554878113507|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|phy > RxFrameNtf:INFORM[type:DATA from:2 to:1 protocol:12 rxTime:3303376005 (1 bytes)]
+1554878115963|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|hand > ReservationStatusNtf:INFORM [requestID:3d5037ec-7827-479c-b5db-956fa093637b to:2 from:1 status:END payload:(0 bytes)]
+1554878131025|INFO|org.arl.fjage.shell.ConsoleShell@15:run|> send 2, 18
+1554878131038|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|EVAL: send 2, 18
+1554878131135|INFO|org.arl.fjage.shell.ShellAgent@30:send|hand < ReservationReq:REQUEST [requestID:636ddb2e-a955-47e8-ad61-bebd0fd7c44e to:2 duration:5.0 priority:NORMAL ttl:NaN payload:(0 bytes)]
+1554878131136|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|hand > ReservationRsp:AGREE
+1554878135097|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|phy > RxFrameNtf:INFORM[type:CONTROL from:2 to:1 protocol:4 rxTime:3325160005 (3 bytes)]
+1554878135097|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|hand > ReservationStatusNtf:INFORM [requestID:636ddb2e-a955-47e8-ad61-bebd0fd7c44e to:2 from:1 status:START payload:(0 bytes)]
+1554878135114|INFO|org.arl.fjage.shell.ShellAgent@30:send|phy < DatagramReq:REQUEST[to:2 protocol:0 (1 bytes)]
+1554878135116|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|phy > AGREE
+1554878135170|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|phy > TxFrameNtf:INFORM[txTime:3325680309 type:DATA]
+1554878137626|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|phy > RxFrameNtf:INFORM[type:DATA from:2 to:1 protocol:12 rxTime:3327494005 (1 bytes)]
+1554878140101|INFO|org.arl.fjage.shell.ShellAgent@20:onReceive|hand > ReservationStatusNtf:INFORM [requestID:636ddb2e-a955-47e8-ad61-bebd0fd7c44e to:2 from:1 status:END payload:(0 bytes)]
+1554878768554|INFO|org.arl.fjage.shell.ConsoleShell@15:run|> shutdown
+1554878768556|INFO|org.arl.fjage.shell.GroovyScriptEngine@30:call|EVAL: shutdown
+1554878768638|INFO|org.arl.unet.sim.SimulationMasterContainer@30:shutdown|Initiating shutdown...
+1554878768638|INFO|org.arl.unet.sim.SimulationMasterContainer@14:run|Stopped listening
+1554878768639|INFO|org.arl.unet.sim.SimulationMasterContainer@30:shutdown|All agents have shutdown
+1554878768640|INFO|org.arl.unet.sim.SimulationMasterContainer@17:run|Stopped listening
+1554878768640|INFO|org.arl.unet.sim.SimulationMasterContainer@30:shutdown|Initiating shutdown...
+1554878768643|INFO|org.arl.unet.sim.SimulationMasterContainer@30:shutdown|All agents have shutdown
