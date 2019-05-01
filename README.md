@@ -2,7 +2,7 @@
 
 By - Niwedita (17CO227), Shweta Hariharan Iyer (17CO245)
 
-# EXPLORING RANDOM ACCESS AND HANDSHAKING TECHNIQUES IN UNDERWATER WIRELESS ACCOUSTIC NETWORKS
+EXPLORING RANDOM ACCESS AND HANDSHAKING TECHNIQUES IN UNDERWATER WIRELESS ACCOUSTIC NETWORKS
 
 What is Random Access and Handshaking technique?
 In Random Access Protocol, all stations have same superiority that is no station has more priority than another station. Any station can send data depending on medium’s state( idle or busy).
